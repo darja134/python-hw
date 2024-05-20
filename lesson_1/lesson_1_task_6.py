@@ -29,6 +29,7 @@ def num_nine():
 def num_zero():
     return "0"
 
+
 # Print 88005553535 by caling functions
 number = num_eight() + num_eight() + num_zero() + num_zero() + num_five() + \
     num_five() + num_five() + num_three() + num_five() + num_three() + num_five()
@@ -64,6 +65,7 @@ def num_nine_2():
 
 def num_zero_2():
     print("0", end = "")
+
 
 # Print 88005553535 by caling functions
 print("Variant no.2: ", end = "")
