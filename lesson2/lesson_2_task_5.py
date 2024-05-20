@@ -10,5 +10,6 @@ def month_to_season(month):
     elif month > 12:
         print("No such a month")
 
+
 for n in range(1, 14):
     month_to_season(n)
