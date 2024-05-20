@@ -6,8 +6,8 @@ def is_year_leap(year):
 
 year = 2023
 is_leap = str(is_year_leap(year))
-print("Year " + str(year) + " is leap: " + is_leap)
+print("год " + str(year) + ": " + is_leap)
 
 year = 2024
 is_leap = str(is_year_leap(year))
-print("Year " + str(year) + " is leap: " + is_leap)
+print("год " + str(year) + ": " + is_leap)
