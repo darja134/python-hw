@@ -9,4 +9,5 @@ def fizz_buzz(number):
         else:
             print(str(n))
 
+
 fizz_buzz(17)
