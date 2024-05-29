@@ -17,7 +17,7 @@ class Address:
             self.flat = address[4]
 
 
-    def printAddress(self):
+    def print_address(self):
         stringAddress = str(self.index) + ", " + self.city + ", " + self.street + ", " + \
               str(self.building) + " - " + str(self.flat)
         return stringAddress
