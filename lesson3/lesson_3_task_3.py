@@ -7,4 +7,4 @@ track = "MS0001KL"
 cost = 2500
 
 mail = Mailing(to_address, from_address, cost, track)
-mail.printMailInfo()
+mail.print_mail_info()
