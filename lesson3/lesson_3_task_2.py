@@ -9,7 +9,7 @@ phone_5 = Smartphone("LG", "H410", "+793333333333")
 catalog = [phone_1, phone_2, phone_3, phone_4, phone_5]
 
 for i in range(0, len(catalog)):
-    catalog[i].printInfo()
+    catalog[i].print_info()
 
 #phone_error_1 = Smartphone("", "3310", "+799999999999")
 #phone_error_2 = Smartphone("Nokia", "", "+799999999999")
