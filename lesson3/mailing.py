@@ -18,5 +18,5 @@ class Mailing:
 
 
     def print_mail_info(self):
-        print("Отправление " + str(self.track) + " из " + self.from_address.printAddress() + " в " + \
-              self.to_address.printAddress() + ". Стоимость " + str(self.cost) + " рублей.")
+        print("Отправление " + str(self.track) + " из " + self.from_address.print_address() + " в " + \
+              self.to_address.print_address() + ". Стоимость " + str(self.cost) + " рублей.")
