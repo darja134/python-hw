@@ -1,6 +1,7 @@
 from address import Address
 from mailing import Mailing
 
+#TODO: initialize addresses, then pass to Mailing
 from_address = "123456,Moscow,Gogolya st.,15,1"
 to_address = "789012,Kaliningrad,Lenina st.,16,2"
 track = "MS0001KL"
