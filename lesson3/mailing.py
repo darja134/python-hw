@@ -6,7 +6,7 @@ class Mailing:
     #cost = 0
     #track = "0000000"
 
-
+    #TODO: rewrite constructor
     def __init__(self, to_address, from_address, cost, track):
         #if(not to_address or not from_address or not cost or not track):
         #    raise ValueError("Value(s) should not be empty!")
