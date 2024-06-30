@@ -152,7 +152,9 @@ def test_end_with_func_negative(str, symbol, result):
 #is_empty
 @pytest.mark.positive_test
 @pytest.mark.parametrize('str, result', [("", True), (" ", True), \
-                                         ("     ", True)])
+                                         ("     ", True), ("123", False), \
+                                         ("Not empty", False), ("@#$%^", False), \
+                                         ("      F", False)])
 def test_is_empty_func_positive(str, result):
     strUtil = StringUtils()
     res = strUtil.is_empty(str)
@@ -160,8 +162,7 @@ def test_is_empty_func_positive(str, result):
 
 
 @pytest.mark.negative_test
-@pytest.mark.parametrize('str, result', [("Not empty", False), ("123", False), \
-                                         ("@#$%^", False), ("      F", False)])
+@pytest.mark.parametrize('str, result', [(123, False)])
 def test_is_empty_func_negative(str, result):
     strUtil = StringUtils()
     res = strUtil.is_empty(str)
