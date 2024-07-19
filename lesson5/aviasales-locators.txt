@@ -1,7 +1,7 @@
-Локатор логотипа (html-елемент, содержащий в себе значок и слово "авиасейлс") - class="s__IfjHnfURFBTIihipyW2z"
-Локатор поля Откуда - id="avia_form_origin-input"
-Локатор поля Куда - id="avia_form_destination-input"
-Локатор поля Когда - class="s__iUCZVK_7pftNPmX5zeoS s__IwBVpRef_1GpuUeZuKUL s__QOH8_RMDyCm4BxeyrqOt s__OIqaFwbhkZg2cIA5d0zJ"
-Локатор поля Обратно - class="s__iUCZVK_7pftNPmX5zeoS s__IwBVpRef_1GpuUeZuKUL s__qO2qUuaHHBMsAgKGqoWL s__OIqaFwbhkZg2cIA5d0zJ"
-Локатор чек-бокса "Открыть Ostrovok.ru в новой вкладке" - class="s__BGUqp9s2kxbNEnDjdIYc"
-Локатор кнопки Найти билеты - class="s__pYAhaCkOP9mPTxKVg5Qi s__cQ6neS4ccCunOu9Ydn0k s__tkvB9amX28GXeWxPcrad s__eEClvAD7BnPrQbwBW5zC s__p0epgEYgBbKyjc8MfJPw s__VtKkhjd_g3s0MVyvRx1g"
+Локатор логотипа (html-елемент, содержащий в себе значок и слово "авиасейлс") - span[data-test-id='logo']
+Локатор поля Откуда - input[id='avia_form_origin-input']
+Локатор поля Куда - input[id='avia_form_destination-input']
+Локатор поля Когда - button[data-test-id='start-date-field']
+Локатор поля Обратно - button[data-test-id='end-date-field']
+Локатор чек-бокса "Открыть Ostrovok.ru в новой вкладке" - input[data-test-id='booking-checkbox']
+Локатор кнопки Найти билеты - button[data-test-id='form-submit']
