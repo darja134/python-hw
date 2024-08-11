@@ -27,12 +27,18 @@ def test_shopping(expected_total, assertion_message):
 
     # find items and add to cart
     driver_firefox.implicitly_wait(10)
-    backpack_button_xpath = "//*[contains(text(), 'Sauce Labs Backpack')]/parent::a/parent::div/following-sibling::div/child::button"
-    driver_firefox.find_element(By.XPATH, backpack_button_xpath).click()
-    tshirt_button_xpath = "//*[contains(text(), 'Sauce Labs Bolt T-Shirt')]/parent::a/parent::div/following-sibling::div/child::button"
-    driver_firefox.find_element(By.XPATH, tshirt_button_xpath).click()
-    onesie_button_xpath = "//*[contains(text(), 'Sauce Labs Onesie')]/parent::a/parent::div/following-sibling::div/child::button"
-    driver_firefox.find_element(By.XPATH, onesie_button_xpath).click()
+    # old way
+    # backpack_button_xpath = "//*[contains(text(), 'Sauce Labs Backpack')]/parent::a/parent::div/following-sibling::div/child::button"
+    # driver_firefox.find_element(By.XPATH, backpack_button_xpath).click()
+    # tshirt_button_xpath = "//*[contains(text(), 'Sauce Labs Bolt T-Shirt')]/parent::a/parent::div/following-sibling::div/child::button"
+    # driver_firefox.find_element(By.XPATH, tshirt_button_xpath).click()
+    # onesie_button_xpath = "//*[contains(text(), 'Sauce Labs Onesie')]/parent::a/parent::div/following-sibling::div/child::button"
+    # driver_firefox.find_element(By.XPATH, onesie_button_xpath).click()
+    
+    # new way
+    driver_firefox.find_element(By.CSS_SELECTOR, "button[data-test='add-to-cart-sauce-labs-backpack']").click()
+    driver_firefox.find_element(By.CSS_SELECTOR, "button[data-test='add-to-cart-sauce-labs-bolt-t-shirt']").click()
+    driver_firefox.find_element(By.CSS_SELECTOR, "button[data-test='add-to-cart-sauce-labs-onesie']").click()
 
     # click shopping cart icon
     driver_firefox.find_element(By.CSS_SELECTOR, "a[class='shopping_cart_link']").click()
